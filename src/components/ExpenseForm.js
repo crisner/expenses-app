@@ -6,10 +6,10 @@ import 'react-day-picker/lib/style.css';
 
 export default class ExpenseForm extends Component {
     state = {
-        description: '',
-        note: '',
-        amount: '',
-        createdAt: new Date(),
+        description: this.props.description || '',
+        note: this.props.note || '',
+        amount: (this.props.amount && (this.props.amount/100).toString()) || '',
+        createdAt: (this.props.createdAt && new Date(this.props.createdAt)) || new Date(),
         isEmpty: true,
         isDisabled: false,
         validDate: true,
