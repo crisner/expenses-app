@@ -24,7 +24,7 @@ store.dispatch(addExpense({description: 'Gas bill', note: 'This months bill', am
 store.dispatch(addExpense({description: 'Phone bill', note: 'This months bill', amount: 50, createdAt: 3000}));
 
 // Add filters
-store.dispatch(setTextFilter('bill'));
+// store.dispatch(setTextFilter('bill'));
 // store.dispatch(setTextFilter('water'));
 
 
