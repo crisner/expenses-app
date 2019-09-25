@@ -40,7 +40,6 @@ class RangePicker extends Component {
         const { from, to } = this.state;
         const modifiers = { start: from, end: to };
         
-        console.log(this.props);
         return (
             <div className="InputFromTo">
                 <DayPickerInput
