@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setTextFilter, sortByAmount, sortByDate } from '../actions/filters';
 
+import RangePicker from './RangePicker';
+
 const ExpenseListFilters = props => (
     <div>
         <label>Search:</label>
@@ -15,13 +17,14 @@ const ExpenseListFilters = props => (
             <option value="date">Date</option>
             <option value="amount">Amount</option>
         </select>
+        <RangePicker />
     </div>
 );
 
 const mapStateToProps = state => {
     return {
         filters: state.filters
-    }
+    };
 }
 
 export default connect(mapStateToProps)(ExpenseListFilters);
