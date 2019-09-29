@@ -9,7 +9,7 @@ import 'react-day-picker/lib/style.css';
 
 import { formatDate, parseDate } from 'react-day-picker/moment';
 
-class RangePicker extends Component {
+export class RangePicker extends Component {
     state = {
         from: moment(this.props.filters.startDate).toDate(),
         to: moment(this.props.filters.endDate).toDate(),
@@ -20,7 +20,7 @@ class RangePicker extends Component {
         if (!from) {
           return;
         }
-        if (moment(to).diff(moment(from), 'months') < 2) {
+        if (moment(to).diff(from, 'months') < 2) {
           this.to.getDayPicker().showMonth(from);
         }
     };
@@ -28,12 +28,12 @@ class RangePicker extends Component {
     handleFromChange = (from) => {
         // Change the from date and focus the "to" input field
         this.setState({ from });
-        this.props.dispatch(setStartDate(moment(from)));
+        this.props.setStartDate(from);
     };
 
     handleToChange = (to) => {
         this.setState({ to }, this.showFromMonth);
-        this.props.dispatch(setEndDate(moment(to)));
+        this.props.setEndDate(to);
     };
 
     render() {
@@ -108,4 +108,9 @@ const mapStateToProps = state => {
     };
 }
 
-export default connect(mapStateToProps)(RangePicker);
+const mapDispatchToProps = dispatch => ({
+    setStartDate: (from) => dispatch(setStartDate(from)),
+    setEndDate: (to) => dispatch(setEndDate(to))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(RangePicker);
