@@ -9,7 +9,7 @@ export default class ExpenseForm extends Component {
         description: this.props.description || '',
         note: this.props.note || '',
         amount: (this.props.amount && (this.props.amount/100).toString()) || '',
-        createdAt: (this.props.createdAt && new Date(this.props.createdAt)) || new Date(),
+        createdAt: (this.props.createdAt && moment(this.props.createdAt).toDate()) || moment(0).toDate(),
         isEmpty: true,
         isDisabled: false,
         validDate: true,
@@ -36,12 +36,8 @@ export default class ExpenseForm extends Component {
     onDateChange = (createdAt, modifiers, dayPickerInput) => {
         
         if(createdAt) {
-            const input = dayPickerInput.getInput();
-
             this.setState({
                 createdAt,
-                isEmpty: !input.value.trim(),
-                isDisabled: modifiers.disabled === true,
                 validDate: true,
                 error: ''
             });
@@ -72,7 +68,7 @@ export default class ExpenseForm extends Component {
 
 
     render() {
-        const { description, amount, note, createdAt, isDisabled, isEmpty, error } = this.state;
+        const { description, amount, note, createdAt, error } = this.state;
         
         return (
             <div>
