@@ -9,7 +9,7 @@ export default class ExpenseForm extends Component {
         description: this.props.description || '',
         note: this.props.note || '',
         amount: (this.props.amount && (this.props.amount/100).toString()) || '',
-        createdAt: (this.props.createdAt && moment(this.props.createdAt).toDate()) || moment(0).toDate(),
+        createdAt: (this.props.createdAt && moment(this.props.createdAt).toDate()) || moment().toDate(),
         isEmpty: true,
         isDisabled: false,
         validDate: true,
