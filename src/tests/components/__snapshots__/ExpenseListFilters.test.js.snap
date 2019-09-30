@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseListFilters 1`] = `
+<div>
+  <label>
+    Search:
+  </label>
+  <input
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <select
+    onChange={[Function]}
+    value="date"
+  >
+    <option
+      value="date"
+    >
+      Date
+    </option>
+    <option
+      value="amount"
+    >
+      Amount
+    </option>
+  </select>
+  <Connect(RangePicker) />
+</div>
+`;
+
+exports[`should render with alternate filters 1`] = `
+<div>
+  <label>
+    Search:
+  </label>
+  <input
+    onChange={[Function]}
+    type="text"
+    value="Bill"
+  />
+  <select
+    onChange={[Function]}
+    value="amount"
+  >
+    <option
+      value="date"
+    >
+      Date
+    </option>
+    <option
+      value="amount"
+    >
+      Amount
+    </option>
+  </select>
+  <Connect(RangePicker) />
+</div>
+`;

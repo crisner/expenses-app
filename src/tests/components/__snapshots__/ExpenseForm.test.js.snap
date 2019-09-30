@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render error when submitting invalid form 1`] = `
+<div>
+  <div />
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Description"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Amount"
+      type="text"
+      value=""
+    />
+    <DayPickerInput
+      classNames={
+        Object {
+          "container": "DayPickerInput",
+          "overlay": "DayPickerInput-Overlay",
+          "overlayWrapper": "DayPickerInput-OverlayWrapper",
+        }
+      }
+      clickUnselectsDay={false}
+      component="input"
+      dayPickerProps={
+        Object {
+          "createdAts": 1970-01-01T00:00:00.000Z,
+        }
+      }
+      format="ll"
+      formatDate={[Function]}
+      hideOnDayClick={true}
+      inputProps={Object {}}
+      keepFocus={true}
+      onDayChange={[Function]}
+      overlayComponent={[Function]}
+      parseDate={[Function]}
+      placeholder="Jan 1, 1970"
+      showOverlay={false}
+      value={1970-01-01T00:00:00.000Z}
+    />
+    <textarea
+      onChange={[Function]}
+      placeholder="Enter note(optional)"
+      value=""
+    />
+    <button>
+      Add Expense
+    </button>
+  </form>
+</div>
+`;
+
+exports[`should render error when submitting invalid form 2`] = `
+<div>
+  <div>
+    <p>
+      Please add a description and an amount
+    </p>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Description"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Amount"
+      type="text"
+      value=""
+    />
+    <DayPickerInput
+      classNames={
+        Object {
+          "container": "DayPickerInput",
+          "overlay": "DayPickerInput-Overlay",
+          "overlayWrapper": "DayPickerInput-OverlayWrapper",
+        }
+      }
+      clickUnselectsDay={false}
+      component="input"
+      dayPickerProps={
+        Object {
+          "createdAts": 1970-01-01T00:00:00.000Z,
+        }
+      }
+      format="ll"
+      formatDate={[Function]}
+      hideOnDayClick={true}
+      inputProps={Object {}}
+      keepFocus={true}
+      onDayChange={[Function]}
+      overlayComponent={[Function]}
+      parseDate={[Function]}
+      placeholder="Jan 1, 1970"
+      showOverlay={false}
+      value={1970-01-01T00:00:00.000Z}
+    />
+    <textarea
+      onChange={[Function]}
+      placeholder="Enter note(optional)"
+      value=""
+    />
+    <button>
+      Add Expense
+    </button>
+  </form>
+</div>
+`;
+
+exports[`should render the expense form 1`] = `
+<div>
+  <div />
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Description"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Amount"
+      type="text"
+      value=""
+    />
+    <DayPickerInput
+      classNames={
+        Object {
+          "container": "DayPickerInput",
+          "overlay": "DayPickerInput-Overlay",
+          "overlayWrapper": "DayPickerInput-OverlayWrapper",
+        }
+      }
+      clickUnselectsDay={false}
+      component="input"
+      dayPickerProps={
+        Object {
+          "createdAts": 1970-01-01T00:00:00.000Z,
+        }
+      }
+      format="ll"
+      formatDate={[Function]}
+      hideOnDayClick={true}
+      inputProps={Object {}}
+      keepFocus={true}
+      onDayChange={[Function]}
+      overlayComponent={[Function]}
+      parseDate={[Function]}
+      placeholder="Jan 1, 1970"
+      showOverlay={false}
+      value={1970-01-01T00:00:00.000Z}
+    />
+    <textarea
+      onChange={[Function]}
+      placeholder="Enter note(optional)"
+      value=""
+    />
+    <button>
+      Add Expense
+    </button>
+  </form>
+</div>
+`;
+
+exports[`should render the expense form with expense data 1`] = `
+<div>
+  <div />
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Description"
+      type="text"
+      value="Downpayment"
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Amount"
+      type="text"
+      value="250"
+    />
+    <DayPickerInput
+      classNames={
+        Object {
+          "container": "DayPickerInput",
+          "overlay": "DayPickerInput-Overlay",
+          "overlayWrapper": "DayPickerInput-OverlayWrapper",
+        }
+      }
+      clickUnselectsDay={false}
+      component="input"
+      dayPickerProps={
+        Object {
+          "createdAts": 1969-12-27T00:00:00.000Z,
+        }
+      }
+      format="ll"
+      formatDate={[Function]}
+      hideOnDayClick={true}
+      inputProps={Object {}}
+      keepFocus={true}
+      onDayChange={[Function]}
+      overlayComponent={[Function]}
+      parseDate={[Function]}
+      placeholder="Dec 27, 1969"
+      showOverlay={false}
+      value={1969-12-27T00:00:00.000Z}
+    />
+    <textarea
+      onChange={[Function]}
+      placeholder="Enter note(optional)"
+      value="For renting the new apartment"
+    />
+    <button>
+      Add Expense
+    </button>
+  </form>
+</div>
+`;

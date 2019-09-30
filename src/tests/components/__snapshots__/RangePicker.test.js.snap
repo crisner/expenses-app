@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render range picker 1`] = `
+<div
+  className="InputFromTo"
+>
+  <DayPickerInput
+    classNames={
+      Object {
+        "container": "DayPickerInput",
+        "overlay": "DayPickerInput-Overlay",
+        "overlayWrapper": "DayPickerInput-OverlayWrapper",
+      }
+    }
+    clickUnselectsDay={false}
+    component="input"
+    dayPickerProps={
+      Object {
+        "disabledDays": Object {
+          "after": 1970-01-01T00:00:00.000Z,
+        },
+        "modifiers": Object {
+          "end": 1970-01-01T00:00:00.000Z,
+          "start": 1970-01-01T00:00:00.000Z,
+        },
+        "numberOfMonths": 2,
+        "onDayClick": [Function],
+        "selectedDays": Array [
+          1970-01-01T00:00:00.000Z,
+          Object {
+            "from": 1970-01-01T00:00:00.000Z,
+            "to": 1970-01-01T00:00:00.000Z,
+          },
+        ],
+        "toMonth": 1970-01-01T00:00:00.000Z,
+      }
+    }
+    format="ll"
+    formatDate={[Function]}
+    hideOnDayClick={true}
+    inputProps={Object {}}
+    keepFocus={true}
+    onDayChange={[Function]}
+    overlayComponent={[Function]}
+    parseDate={[Function]}
+    placeholder="From"
+    showOverlay={false}
+    value={1970-01-01T00:00:00.000Z}
+  />
+   
+  —
+   
+  <span
+    className="InputFromTo-to"
+  >
+    <DayPickerInput
+      classNames={
+        Object {
+          "container": "DayPickerInput",
+          "overlay": "DayPickerInput-Overlay",
+          "overlayWrapper": "DayPickerInput-OverlayWrapper",
+        }
+      }
+      clickUnselectsDay={false}
+      component="input"
+      dayPickerProps={
+        Object {
+          "disabledDays": Object {
+            "before": 1970-01-01T00:00:00.000Z,
+          },
+          "fromMonth": 1970-01-01T00:00:00.000Z,
+          "modifiers": Object {
+            "end": 1970-01-01T00:00:00.000Z,
+            "start": 1970-01-01T00:00:00.000Z,
+          },
+          "month": 1970-01-01T00:00:00.000Z,
+          "numberOfMonths": 2,
+          "selectedDays": Array [
+            1970-01-01T00:00:00.000Z,
+            Object {
+              "from": 1970-01-01T00:00:00.000Z,
+              "to": 1970-01-01T00:00:00.000Z,
+            },
+          ],
+        }
+      }
+      format="ll"
+      formatDate={[Function]}
+      hideOnDayClick={true}
+      inputProps={Object {}}
+      keepFocus={true}
+      onDayChange={[Function]}
+      overlayComponent={[Function]}
+      parseDate={[Function]}
+      placeholder="To"
+      showOverlay={false}
+      value={1970-01-01T00:00:00.000Z}
+    />
+  </span>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <style>
+      
+                    .InputFromTo .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
+                        background-color: #f0f8ff !important;
+                        color: #4a90e2;
+                    }
+                    .InputFromTo .DayPicker-Day {
+                        border-radius: 0 !important;
+                    }
+                    .InputFromTo .DayPicker-Day--start {
+                        border-top-left-radius: 50% !important;
+                        border-bottom-left-radius: 50% !important;
+                    }
+                    .InputFromTo .DayPicker-Day--end {
+                        border-top-right-radius: 50% !important;
+                        border-bottom-right-radius: 50% !important;
+                    }
+                    
+    </style>
+  </HelmetWrapper>
+</div>
+`;
